@@ -8,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped(typeof(IBeerRepository), typeof(BeerRepository));
 builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
